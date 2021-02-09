@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#00211d1e">
+    <android.support.v4.widget.Space
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="4"/>
+    <FrameLayout android:layout_width="match_parent"
+                 android:paddingBottom="20dp"
+                 android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/common_dialog_radio_bg"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:id="@+id/lin_bg"
+        android:paddingBottom="15dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:layout_marginBottom="20dp"
+        android:paddingTop="25dp">
+
+        <ScrollView
+            android:id="@+id/sco_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/wallet_pwd"
+                    android:textColor="@color/C3"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="@string/pwd_set_hint"
+                    android:textColor="@color/C5"
+                    android:textSize="10sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:text="@string/password"
+                    android:textColor="@color/C3"
+                    android:textSize="12sp"/>
+
+                <EditText
+                    android:id="@+id/wallet_pwd_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@null"
+                    android:hint="@string/place_pwd"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:textColor="@color/C6"
+                    android:textColorHint="@color/C4"
+                    android:textCursorDrawable="@drawable/et_cursor_drawable_blue"
+                    android:textSize="12sp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_marginTop="12dp"
+                    android:background="@color/C5"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/retype_pwd"
+                    android:textColor="@color/C3"
+                    android:textSize="12sp"/>
+
+                <EditText
+                    android:id="@+id/wallet_pwd_repeat_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@null"
+                    android:hint="@string/password_again"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:textColor="@color/C6"
+                    android:textColorHint="@color/C4"
+                    android:textCursorDrawable="@drawable/et_cursor_drawable_blue"
+                    android:textSize="12sp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_marginTop="12dp"
+                    android:background="@color/C5"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/password_reminder"
+                    android:textColor="@color/C3"
+                    android:textSize="12sp"/>
+
+                <EditText
+                    android:id="@+id/wallet_pwd_hint_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@null"
+                    android:hint="@string/input_pwd_hint"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:textColor="@color/C6"
+                    android:textColorHint="@color/C4"
+                    android:textCursorDrawable="@drawable/et_cursor_drawable_blue"
+                    android:textSize="12sp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_marginTop="12dp"
+                    android:background="@color/C5"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/pwd_remark"
+                    android:textColor="@color/C5"
+                    android:textSize="10sp"/>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+        <Button
+            android:id="@+id/next"
+            android:layout_width="50dp"
+            android:gravity="bottom"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@drawable/pin_confirm"
+        />
+    </FrameLayout>
+    <android.support.v4.widget.Space
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="7"/>
+</LinearLayout>

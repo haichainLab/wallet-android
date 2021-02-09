@@ -1,0 +1,127 @@
+<resources>
+
+    <style name="BaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        Customize your theme here.
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="colorAccent">@color/C6</item>
+    </style>
+
+    <style name="AppTheme" parent="@style/BaseTheme">
+
+    </style>
+    <!--去掉actionbar的主題-->
+    <style name="NoActionBarTheme" parent="BaseTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <!--全屏主題-->
+    <style name="FullScreenTheme" parent="NoActionBarTheme">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <!--使用背景图片解决开启app瞬间白屏的问题,原来打算使用透明色,但是响应还是慢-->
+    <style name="SplashTheme" parent="FullScreenTheme">
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="SendCost_style" parent="@style/AppTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+
+    <style name="toolbar_style" parent="@style/ThemeOverlay.AppCompat.Light">
+        <item name="actionMenuTextColor">@android:color/white</item>
+        //设置menu 中文字的颜色
+        <item name="colorControlNormal">@android:color/white</item>
+        //设置navigationIcon 和 溢出图标的颜色
+    </style>
+
+    <style name="middle_titile_style">
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="create_wallet_radio_style">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/create_wallet_radio_color_selecter</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">40sp</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/create_wallet_radio_selecter</item>
+    </style>
+
+
+    <style name="MyCheckBox" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/gray</item>
+        <item name="colorControlActivated">@color/colorPrimaryDark</item>
+    </style>
+
+    <!--CustomDialog-->
+    <style name="customDialog" parent="Animation.AppCompat.Dialog">
+        <item name="android:windowFrame">@null</item><!--取消默认Dialog的windowFrame框-->
+        <item name="android:windowNoTitle">true</item><!--设置无标题Dialog-->
+        <item name="android:backgroundDimEnabled">true</item><!--是否四周变暗-->
+        <item name="android:windowIsFloating">true</item><!-- 是否悬浮在activity上 -->
+        <item name="android:windowContentOverlay">@null</item><!-- 取消默认ContentOverlay背景 -->
+        <item name="android:windowBackground">@android:color/transparent
+        </item><!--取消window默认背景 不然四角会有黑影-->
+        <!-- Dialog进入及退出动画 -->
+        <item name="android:windowAnimationStyle">@style/ActionSheetDialogAnimation</item>
+    </style>
+    <!-- ActionSheet进出动画 -->
+    <style name="ActionSheetDialogAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/actionsheet_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/actionsheet_dialog_out</item>
+    </style>
+
+    <style name="options_dialog_style" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/send_cost_in</item>
+        <item name="android:windowExitAnimation">@anim/send_cost_out</item>
+    </style>
+
+    <style name="AnimationLeftFade">
+        <item name="android:windowEnterAnimation">@anim/in_lefttoright</item>
+        <item name="android:windowExitAnimation">@anim/out_righttoleft</item>
+    </style>
+
+    <style name="text_init_wallet">
+        <item name="android:textColor">@color/C3</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="AnimationRightFade">
+        <item name="android:windowEnterAnimation">@anim/in_righttoleft</item>
+        <item name="android:windowExitAnimation">@anim/out_lefttoright</item>
+    </style>
+    <style name="MySwitchTheme">
+        <item name="colorControlActivated">@color/limegreen</item>
+        <item name="colorSwitchThumbNormal">#FFF1F1F1</item>
+        <item name="android:colorForeground">#FF2F2F2F</item>
+    </style>
+
+    <!-- 设置dialog弹出，退出动画 -->
+    <style name="dialogWindowAnim" parent="android:Animation" mce_bogus="1">
+        <item name="android:windowEnterAnimation">@anim/pin_anim_in</item>
+        <item name="android:windowExitAnimation">@anim/pin_anim_out</item>
+    </style>
+
+    <style name="selector_button">
+        <item name="android:textColor">@drawable/textcolor_seletor</item>
+        <item name="android:background">@drawable/selector_btn_pin_create</item>
+    </style>
+
+    <style name="BaseDialog" parent="android:Theme.Light">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+    </style>
+</resources>

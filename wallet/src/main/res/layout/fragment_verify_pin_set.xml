@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="@dimen/toolbar_pading_top"
+    android:gravity="center_horizontal"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent">
+
+    <TextView
+        style="@style/middle_titile_style"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pin_verify_title"/>
+
+    <TextView
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:textSize="17sp"
+        android:textColor="#75C4FC"
+        android:gravity="center"
+        android:text="@string/pin_verify_explain"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp" />
+
+    <io.samos.wallet.widget.KeyboardProgress
+        android:id="@+id/keyboardtips"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </io.samos.wallet.widget.KeyboardProgress>
+
+    <io.samos.wallet.widget.NumberKeyboard
+        android:id="@+id/numberkeyboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </io.samos.wallet.widget.NumberKeyboard>
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="90dp"
+              android:orientation="vertical"
+              android:id="@+id/lin_content"
+              android:paddingLeft="20dp"
+              android:paddingRight="20dp">
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical">
+        <TextView android:id="@+id/tx_type"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/payment_notice"
+                  android:textColor="@color/C3"
+                  android:textSize="16sp"/>
+        <TextView android:id="@+id/tv_date"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentRight="true"
+                  android:layout_marginRight="5dp"/>
+    </RelativeLayout>
+    <TextView android:id="@+id/tv_num"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+    />
+    <TextView android:id="@+id/tv_adress"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="15dp"
+              android:layout_marginTop="5dp"
+    />
+    <include layout="@layout/layout_default_line"/>
+
+</LinearLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:elevation="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_wallet_head"
+                android:layout_width="82dp"
+                android:layout_height="82dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/border_header"
+                android:padding="2dp"
+                android:src="@drawable/head"/>
+
+            <TextView
+                android:id="@+id/tv_total_asset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_wallet_head"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="0"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:id="@+id/tv_total_asset_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_total_asset"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/total_asset"
+                android:textColor="@android:color/white"
+                android:textSize="12dp"/>
+
+        </RelativeLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/C1"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:gravity="right|center_vertical">
+            <LinearLayout android:id="@+id/iv_wallet_add"
+                          android:layout_width="wrap_content"
+                          android:layout_height="match_parent"
+                          android:layout_centerVertical="true"
+                          android:gravity="center_vertical"
+                          android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="6dp"
+                    android:layout_toLeftOf="@+id/iv_wallet_add"
+                    android:background="@drawable/add_assets">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/add"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <include
+            layout="@layout/layout_default_line"/>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swiprefreshlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

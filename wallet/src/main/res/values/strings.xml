@@ -1,0 +1,247 @@
+<resources>
+    <!--<string name="app_name">Galt</string>-->
+    <string name="login">Login</string>
+    <string name="pin_title">Set a PIN#</string>
+    <string name="pin_verify_title">Confirm PIN#</string>
+    <string name="pin_Input_title">Verify PIN security code</string>
+    <string name="pin_tips">
+        It’s your first time using our mobile wallet, \n so you’ll need to either create a new
+        wallet \n or load an existing one from a mnemonics
+    </string>
+    <string name="pin_create_wallet_name">Name your wallet</string>
+    <string name="pin_create_wallet_avatar">Wallet\'s Avatar</string>
+    <string name="choose_coin_type">Chose coin type</string>
+    <string name="pin_create_wallet_seed">Mnemonics</string>
+    <string name="pin_create_wallet_seed_verify">Confrim mnemonics</string>
+    <string name="pin_create_wallet_generate_seed">generate mnemonics</string>
+    <string name="pin_explain">This PIN # will used to open the wallet \n Don’t forget your pin If
+        you do, you may \n lose access to your mobile wallet
+    </string>
+    <string name="pin_verify_explain">Enter your PIN once more to continue</string>
+    <string name="pin_input_explain">Please enter your PIN code</string>
+    <string name="disclaimer">Disclaimer</string>
+    <string name="continues">Continue</string>
+    <string name="reset_pin">reset</string>
+
+    <string name="common_next">Next</string>
+    <string name="start_import_wallet">Import</string>
+    <string name="toast_pin_error">The PIN security code of the two inputs is inconsistent</string>
+    <string name="input_pin_error">PIN entered incorrectly, please try again</string>
+    <string name="input_pinnum_error">Please try again after 5 minutes</string>
+    <string name="input_pinnum_one">PIN input error, there is only one chance left.</string>
+    <string name="input_pinnum_two">PIN input error, there are 2 chances lef</string>
+    <string name="input_pintime">Please try again in</string>
+    <string name="input_pinminut">minutes</string>
+    <string name="creates">Create</string>
+    <string name="imports">Import</string>
+    <string name="input_id">Please enter your wallet ID</string>
+    <string name="input_amount">Please enter the transaction amount.</string>
+    <string name="input_address">Please enter your wallet address</string>
+    <string name="insufficient_balance">Insufficient wallet balance</string>
+    <string name="me">My Wallet</string>
+    <string name="found">Exchange</string>
+    <string name="vote">HaichainVote</string>
+    <string name="scan_error">Address type error, please scan again</string>
+
+    <string name="wallet_creat_title">Create a Wallet</string>
+    <string name="generate_seed">generate mnemonics</string>
+    <string name="copy_seed">copy mnemonics</string>
+    <string name="paste_seed">paste mnemonics</string>
+
+    <string name="wallet_create_tips">
+        If you don\'t yet have a wallet, generate a mnemonics and we\'ll create one for you. If you
+        already have a wallet, enter the mnemonics below and load it
+    </string>
+    <string name="disclaimer_info">
+        By continuing, you understand the risks related to the use of cryptographic tokens and
+        blockchain-based software, the skycoin mobile wallet, and the Skyconin cryptocrrenc You
+        understand this product is provided as-is, and agree to the Terms and Conditions governing
+        the usage of this product
+    </string>
+    <string name="error_agreement">Saftguard your mnemonics!</string>
+    <string name="hint_agree">Yeah, I understand</string>
+    <string name="wallets">Wallets</string>
+    <string name="wallet">Wallet</string>
+    <string name="sky_hours">SKY Hours</string>
+    <string name="balance">Balance</string>
+    <string name="new_wallet">New Wallet</string>
+    <string name="load_wallet">Load Wallet</string>
+    <string name="Address">Address</string>
+    <string name="new_address">New Address</string>
+    <string name="transaction">Transaction</string>
+    <string name="pls_input_wallet_name">Please input a wallet name</string>
+    <string name="pls_generate_seed">Please generate a mnemonics</string>
+    <string name="pls_confirm_seed">Please confirm your mnemonics</string>
+    <string name="pls_input_seed">Please input mnemonics.</string>
+    <string name="pls_input_pwd">Please input password</string>
+    <string name="input_pwd">Input password.</string>
+    <string name="pls_confirm_pwd">Please confirm password</string>
+    <string name="pwd_not_equal">Please input same password</string>
+    <string name="wallet_name_existed">Wallet name has used, please input another one</string>
+    <string name="wallet_is_existed">Wallet has created</string>
+    <string name="str_copy_success">copied</string>
+    <string name="send_sky">Send SKY</string>
+    <string name="send_from">Send from</string>
+    <string name="send_to">Send to</string>
+    <string name="amount">Amount</string>
+    <string name="nodes">Nodes</string>
+    <string name="creating_new_address">Creating new address</string>
+    <string name="notes">Notes</string>
+    <string name="cancle">Cancel</string>
+    <string name="set_network">go to system setting</string>
+    <string name="network_unavailable_hint">Network unavailable，please check your network setting
+    </string>
+    <string name="pin_error">Please enter your password</string>
+    <string name="backup_wallet">Backup Wallet</string>
+    <string name="backup_wallet_tips">Long press copy, please keep in mind the following, missing it
+        means losing your wallet
+    </string>
+    <string name="str_send_success">Send Success</string>
+    <string name="str_send_error">Send failed</string>
+    <string name="send">Send</string>
+    <string name="str_create_address_failed">Create Address Failed</string>
+    <string name="menu_refresh_wallet">Refresh Wallet</string>
+    <string name="menu_create_address">Create Address</string>
+    <string name="menu_transaction_info">Transaction Info</string>
+    <string name="menu_backup_wallet">Backup Wallet</string>
+    <string name="menu_send_coin">Send Coin</string>
+    <string name="menu_version_up">Version update</string>
+    <string name="loading_str">\nLoading...\n</string>
+    <string name="str_show_qrcode">QR code</string>
+    <string name="delete_wallet">Delete Wallet</string>
+    <string name="delete_wallet_tips">Please remember to transfer your digital assets before
+        deleting your wallet, otherwise you will not be able to recover your loss
+    </string>
+    <string name="delete_confirm">Confirm Delete</string>
+    <string name="delete_wallet_error_msg">Delete Wallet Error!</string>
+    <string name="manager_wallet">Manage Wallets</string>
+    <string name="transrecord">Transaction History</string>
+    <string name="alart">notification</string>
+    <string name="system_settings">System Settings</string>
+    <string name="help_center">Help center</string>
+    <string name="about_us">About Us</string>
+
+    <!--all-->
+    <string name="write_down_mnemonic">Write down your wallet mnemonics</string>
+    <string name="write_down_mnemonic_hint">The mnemonics is for restoring your wallet. It is recommended to write down your mnemonics and store it somewhere safe.
+    </string>
+    <string name="wallet_creat">Create A Wallet</string>
+    <string name="wallet_two">W a l l e t</string>
+    <string name="import_existed_wallet">Import Existed Wallet</string>
+    <string name="ettes_and_digits">6-12 Lettes and Digits</string>
+    <string name="backup_mnemonic">Back-up Wallet</string>
+    <string name="wallet_s_name">Name your wallet</string>
+    <string name="re_type_password">Re-Type Password</string>
+    <string name="alright_reserved">Haichain 2018 all rights reserved</string>
+    <string name="password">Password</string>
+    <string name="password_reminder">Password Prompt (Optional)</string>
+    <string name="retype_pwd">Retype Password</string>
+    <string name="Write_down_your_wallet_mnemonic">Write down your wallet mnemonics</string>
+    <string name="make_sure_remember">Make sure you remember your mnemonics</string>
+    <string name="retype_mnenonic">Please input your mnemonics</string>
+    <string name="add_assets">Add New Assets</string>
+    <string name="confirm">Confirm</string>
+    <string name="roll_out">Send</string>
+    <string name="into">Receive</string>
+    <string name="add">Add</string>
+    <string name="order_inputs">Sender:</string>
+    <string name="order_outpus">Receiver:</string>
+
+    <string name="turn_the_party">Turn the party:</string>
+    <string name="remark">Remark:</string>
+    <string name="trans_records">Transaction Records</string>
+    <string name="order_information">Order Information</string>
+    <string name="transaction_number">Amount:</string>
+    <string name="transaction_time">Timestamp:</string>
+    <string name="copy_the_url">Copy the url</string>
+    <string name="share">Share</string>
+    <string name="save_to_album">Save to album</string>
+    <string name="save_to_album_succ">Saved QRcode to album</string>
+    <string name="save_to_album_fail">Saved QRcode to album failed</string>
+    <string name="import_the_wallet">Import the wallet</string>
+    <string name="management_of_the_purse">Manage Wallets</string>
+    <string name="plase_loading">Please wait while loading</string>
+    <string name="save">Save</string>
+    <string name="back_up_mnemonic">BACK-UP Mnemonics</string>
+    <string name="delete_the_wallet">Delete This Wallet</string>
+    <string name="change_the_psaaword">Change the psaaword</string>
+    <string name="forget_your_password">Forget your password?</string>
+    <string name="the_import_mnemonic_can_reset_the_password">The import mnemonics can reset the
+        password
+    </string>
+    <string name="immediately_the_import">Immediately the import</string>
+    <string name="the_old_password">The old password</string>
+    <string name="read">Read</string>
+    <string name="payment_notice">Payment notice</string>
+    <string name="alerts">Alerts</string>
+    <string name="multilingual">Language</string>
+    <string name="monetary_unit">Currency Unit</string>
+    <string name="chinese">Chinese</string>
+    <string name="stytem_settings">Stytem Settings</string>
+    <string name="check_the_update">Check for Updates</string>
+    <string name="privacy_policy">Privacy policy</string>
+    <string name="use_protools">Use protools</string>
+    <string name="easy_to_use">Galt Wallet is a safe digital wallet for blockchain asset.</string>
+    <string name="management_tool"></string>
+    <string name="the_transferee">Sender /Recipient:</string>
+    <string name="recent_transaction_record">Recent Transaction Records</string>
+    <string name="transferred_to">transferred to</string>
+    <string name="enter_or_press_the_paste_adress">Enter or paste the address</string>
+    <string name="the_other_address">Enter Recipient Address</string>
+    <string name="please_input_the_amount_transferred">Enter the amount</string>
+    <string name="tansfer_amount">Transfer Amount</string>
+    <string name="note">note</string>
+    <string name="note_optional">Note(optional)</string>
+    <string name="payment_details">Payment Details</string>
+    <string name="the_wallet_password">Wallet Password</string>
+    <string name="_6_12letters_and_digits">6-12 Letters and Digits</string>
+    <string name="in_transfer">Transfer in process</string>
+    <string name="in_vote">Vote in process</string>
+    <string name="transfer_success">Transfer\nCompleted</string>
+    <string name="vote_success">Vote\nCompleted</string>
+    <string name="english">English</string>
+    <string name="hint_lanuage">You need to restart the application for the language to take
+        effect
+    </string>
+    <string name="total_asset">Total Assets</string>
+    <string name="switch_the_purse">Switch wallet</string>
+    <string name="wallet_pwd">The wallet password</string>
+    <string name="pwd_set_hint">Please create a password for your wallet, which is used to trade and
+        delete sensitive rice crops such as wallets
+    </string>
+    <string name="input_pwd_hint">Please enter the password prompt</string>
+    <string name="password_again">Please enter your password again</string>
+    <string name="place_pwd">Please enter your password</string>
+    <string name="pwd_remark">We will not record your password and cannot find it after it is lost
+        To prevent forgetting it, you can set up a simple password prompt
+    </string>
+    <string name="to_share">Share To</string>
+    <string name="password_set_successful">Password set successful!</string>
+    <string name="wallet_set_successful">Successful wallet creation!</string>
+    <string name="import_">Import</string>
+    <string name="please_select_wallet_icon">Please select an image as the wallet icon</string>
+    <string name="got_it">Got It</string>
+    <string name="ban_screen_hint">To secure your assets:</string>
+    <string name="ban_screen_hint1">It is not recommended to take screenshots or photos of your mnemonics as it might result in loss of your assets.
+    </string>
+    <string name="ban_screen_hint2">Wallet</string>
+    <string name="load_import">Importing the wallet...</string>
+    <string name="import_success">Import wallet successfully!</string>
+    <string name="save_success">Save successfully!</string>
+    <string name="pwd_hint">Password prompt:</string>
+    <string name="wallet_pwd_hint_bottom">Tip: if you forget your password, please uninstall and
+        reinstall the software
+    </string>
+    <string name="del_success">Delete successfully！</string>
+    <string name="wallet_save_successful">Save successfully！</string>
+    <string name="back_up_wallet">Backup completed!</string>
+    <string name="del_hint">Please be careful, Your wallet can only be recovered by its corresponding mnemonics.</string>
+    <string name="into_price">Payment Amount</string>
+    <string name="notice">Notice</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="updatecontent"></string>
+    <string name="custom_content_text">自定义通知栏进度:%d%%/100%%</string>
+    <string name="update_title"> 震撼来袭</string>
+    <string name="title_activity_about">AboutActivity</string>
+
+</resources>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="io.samos.wallet">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission
+        android:name="android.permission.READ_LOGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission
+        android:name="android.permission.CHANGE_CONFIGURATION"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:name=".base.SamosAppliacation"
+        android:icon="@drawable/icon_launcher"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="io.samos.im.activity.RegisterActivity"></activity>
+        <activity
+            android:name=".activities.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- 必须配置 fileProvider， 注意： android:authorities="${applicationId}.fileProvider" 不要直接copy，设置为你的包名.fileProvider -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <meta-data
+            android:name="channeltest"
+            android:value="google;xiaomi;huawei;yyb" />
+
+        <activity
+            android:name=".activities.PIN.PinsetActivity"
+            android:theme="@style/SendCost_style"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activities.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.Wallet.WalletDetailsActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SendCostActivity"
+            android:theme="@style/SendCost_style" />
+        <activity
+            android:name=".activities.Transaction.TransactionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.MnemonicWordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.Wallet.WalletInitActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.Wallet.FirstInitAcitivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <!--<activity-->
+            <!--android:name="com.tencent.bugly.beta.ui.BetaActivity"-->
+            <!--android:configChanges="keyboardHidden|orientation|screenSize|locale"-->
+            <!--android:theme="@android:style/Theme.Translucent" />-->
+
+        <activity
+            android:name=".activities.Assets.AddNewAssetsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.Transaction.RullIntoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.Transaction.RullOutActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+            <intent-filter>
+                <!--action.VIEW和category.DEFAULT必须设置-->
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <!--如果需要浏览器支持打开，则category.BROWSABLE-->
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <!--schema的协议类型：随便设置，只要按照统一规则，前后端一致就行-->
+                <data
+                    android:scheme="haichain"
+                    android:path="/pay"
+                    />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activities.Transaction.SubmitVoteActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+                <!--action.VIEW和category.DEFAULT必须设置-->
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <!--如果需要浏览器支持打开，则category.BROWSABLE-->
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <!--schema的协议类型：随便设置，只要按照统一规则，前后端一致就行-->
+                <data
+                    android:scheme="haichainvote"
+                    android:path="/vote"
+                    />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".activities.Transaction.TransRecordsActivity" />
+        <activity
+            android:name=".activities.Transaction.IntoWalletActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".activities.ManagerWallet.ManagerWalletActivity" />
+        <activity
+            android:name=".activities.ManagerWallet.ManagerWalletInfoActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".activities.ManagerWallet.WalletChangePwdActivity" />
+        <activity android:name=".activities.Alerts.AlertsActivity" />
+        <activity
+            android:name=".activities.settings.SystemSettingActivity"
+            android:configChanges="locale|layoutDirection" />
+        <activity android:name=".activities.About.AboutUsActivity" />
+        <activity android:name=".activities.BackupsWallet.BackUpWalletActivity" />
+        <activity
+            android:name=".activities.SlideIntroActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.Html5Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="io.samos.im.activity.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="io.samos.mall.H5Deposit"
+            android:screenOrientation="portrait" />
+
+        <uses-library
+            android:name="android.test.runner"
+            android:required="false" />
+
+
+        <activity
+            android:name=".activities.About.AboutActivity"
+            android:label="@string/title_activity_about"></activity>
+        <!--<service android:name="com.zhangke.websocket.WebSocketService" />-->
+        <!--<receiver android:name="com.zhangke.websocket.NetworkChangedReceiver" />-->
+    </application>
+
+</manifest>

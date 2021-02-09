@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/pin_create_wallet_background"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="@dimen/toolbar_pading_top"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        style="@style/middle_titile_style"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wallet_creat_title"/>
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:textColor="#75C4FC"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:minHeight="60dp"
+        android:layout_height="wrap_content"
+        android:text="@string/wallet_create_tips"/>
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:background="@drawable/border_oval"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            style="@style/create_wallet_radio_style"
+            android:id="@+id/create_wallet"
+            android:text="@string/creates"/>
+        <RadioButton
+            style="@style/create_wallet_radio_style"
+            android:id="@+id/import_wallet"
+            android:text="@string/imports" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+    </FrameLayout>
+</LinearLayout>

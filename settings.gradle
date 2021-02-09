@@ -1,0 +1,1 @@
+include ':wallet', ':zxing_lib',':websocketlib',':versionlib',':CordovaLib'

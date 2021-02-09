@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0ddfcd"],{8472:function(n,e,t){"use strict";t.r(e);var c=function(){var n=this,e=n.$createElement,t=n._self._c||e;return t("div",{},[n._v("\n    该功能暂未开放（在线客服）\n")])},a=[],u={name:"",data:function(){return{}},components:{}},o=u,r=t("2877"),d=Object(r["a"])(o,c,a,!1,null,"9c84ca56",null);e["default"]=d.exports}}]);
+//# sourceMappingURL=chunk-2d0ddfcd.0c433390.js.map

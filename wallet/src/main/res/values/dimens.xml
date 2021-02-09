@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="splash_version_margin_bottom">15dp</dimen>
+    <dimen name="activity_title_text_size">25dp</dimen>
+
+
+    <dimen name="toolbar_height">55dp</dimen>
+    <dimen name="toolbar_pading_top">0dp</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+</resources>

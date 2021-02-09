@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0cefff"],{"629f":function(n,e,t){"use strict";t.r(e);var c=function(){var n=this,e=n.$createElement,t=n._self._c||e;return t("div",{},[n._v("\n    区块链浏览器\n")])},a=[],u={name:"",data:function(){return{}},components:{}},o=u,r=t("2877"),f=Object(r["a"])(o,c,a,!1,null,"433249ac",null);e["default"]=f.exports}}]);
+//# sourceMappingURL=chunk-2d0cefff.b2ce0ea2.js.map

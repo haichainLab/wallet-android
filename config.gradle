@@ -1,0 +1,39 @@
+
+def build_versions = [:]
+build_versions.compileSdkVersion = 27
+build_versions.buildToolsVersion = "28.0.3"
+build_versions.minSdkVersion = 19
+build_versions.targetSdkVersion = 27
+build_versions.versionCode = 40
+build_versions.versionName = "2.1.1"
+build_versions.applicationId = "io.haichain.wallet"
+
+
+ext.build_versions = build_versions
+
+def versions = [:]
+versions.v7 = "27.0.1"
+versions.v4 = "27.0.1"
+versions.design = "27.0.1"
+versions.constraint = "1.0.2"
+versions.junit = "4.12"
+versions.testrunner = "1.0.1"
+versions.testespresso = "3.0.1"
+
+def support = [:]
+support.v7 = "com.android.support:appcompat-v7:$versions.v7"
+support.v4 = "com.android.support:support-v4:$versions.v4"
+support.constraint = "com.android.support.constraint:constraint-layout:$versions.constraint"
+support.design = "com.android.support:design:$versions.design"
+
+def other = [:]
+other.junit = "junit:junit:$versions.junit"
+other.testrunner = "com.android.support.test:runner:$versions.testrunner"
+other.testespresso = "com.android.support.test.espresso:espresso-core:$versions.testespresso"
+
+def deps = [:]
+deps.support = support
+deps.other = other
+ext.deps = deps
+
+

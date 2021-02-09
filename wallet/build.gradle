@@ -1,0 +1,189 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-android-extensions'
+
+
+android {
+    compileSdkVersion build_versions.compileSdkVersion
+    buildToolsVersion '26.0.2'
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+            assets.srcDirs = ['assets', 'src/main/assets', 'src/main/assets/']
+        }
+    }
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+
+    defaultConfig {
+        applicationId build_versions.applicationId
+        minSdkVersion build_versions.minSdkVersion
+        targetSdkVersion build_versions.targetSdkVersion
+        versionCode build_versions.versionCode
+        versionName build_versions.versionName
+        flavorDimensions "versionCode"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            abiFilters 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+        }
+        multiDexEnabled true
+
+    }
+    repositories {
+        google()
+        jcenter()
+        flatDir {
+            dirs 'libs'   // aar目录
+        }
+    }
+    buildTypes {
+        debug {
+            applicationIdSuffix '.debug'
+            resValue "string", "app_name", "GaltDebug"
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+        release {
+            resValue "string", "app_name", "Galt"
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+    }
+    productFlavors {
+        google {
+            manifestPlaceholders = [CHANNEL_VALUE: "google"]
+        }
+        huawei {
+            manifestPlaceholders = [CHANNEL_VALUE: "huawei"]
+        }
+        yyb {
+            manifestPlaceholders = [CHANNEL_VALUE: "yyb"]
+        }
+        xiaomi {
+            manifestPlaceholders = [CHANNEL_VALUE: "xiaomi"]
+        }
+    }
+
+    //使用databinding
+    dataBinding {
+        enabled = true
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+//    dexOptions {
+//        javaMaxHeapSize "1g"
+//        preDexLibraries = false
+//        additionalParameters = [//配置multidex参数
+//                                '--multi-dex',//多dex分包
+//                                '--set-max-idx-number=24000',//每个包内方法数上限
+//                                '--minimal-main-dex'
+//        ]
+//    }
+
+//    useLibrary 'android.test.runner'
+//
+//    useLibrary 'android.test.base'
+//    useLibrary 'android.test.mock'
+}
+
+kapt {
+    // all about kapt options：https://kotlinlang.org/docs/reference/kapt.html
+    // 启用kotlin apt stubs（存根）
+    generateStubs = true
+//    correctErrorTypes = true
+    useBuildCache = true
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile(name: 'mobile', ext: 'aar')
+    implementation deps.support.v7
+    implementation deps.support.v4
+    implementation deps.support.constraint
+    implementation deps.support.design
+    testImplementation deps.other.junit
+    implementation 'com.madgag.spongycastle:core:1.58.0.0@jar'
+    implementation 'io.github.novacrypto:SHA256:0.0.1@jar'
+    implementation 'io.github.novacrypto:ToRuntime:0.9.0@jar'
+    implementation 'com.google.protobuf:protobuf-java:2.5.0'
+    implementation 'com.android.support:multidex:1.0.1'
+    androidTestImplementation deps.other.testrunner
+    androidTestImplementation deps.other.testespresso
+    //noinspection GradleCompatible
+    implementation 'com.squareup.okhttp3:okhttp:3.6.0'
+
+
+    implementation 'com.squareup.okio:okio:1.11.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.2.0'
+    implementation 'io.reactivex.rxjava2:rxjava:+'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:+'
+    implementation 'com.squareup.retrofit2:converter-gson:+'
+    implementation 'com.squareup.okhttp3:logging-interceptor:+'
+    implementation 'io.reactivex.rxjava2:rxandroid:+'
+    implementation 'com.squareup.retrofit2:converter-scalars:+'
+    implementation 'com.android.support:recyclerview-v7:27.0.1'
+
+    //implementation 'com.tencent.bugly:crashreport_upgrade:latest.release'
+//其中latest.release指代最新版本号，也可以指定明确的版本号，例如1.2.0
+    //  implementation 'com.tencent.tinker:tinker-android-lib:1.9.6'
+    //s compile 'com.tencent.bugly:nativecrashreport:latest.release' //其中latest.release指代最新版本号，也可以指定明确的版本号，例如2.2.0
+
+    // implementation 'com.tencent.bugly:crashreport_upgrade:latest.release'
+    //   classpath "com.tencent.bugly:tinker-support:latest.release"
+
+    compile 'com.tencent.bugly:crashreport:latest.release'
+    //其中latest.release指代最新Bugly SDK版本号，也可以指定明确的版本号，例如2.2.0
+
+    implementation 'com.dhh:websocket2:2.1.4'
+
+    //其中latest.release指代最新版本号，也可以指定明确的版本号，例如1.2.0
+    implementation 'pub.devrel:easypermissions:1.0.1'
+    implementation 'com.trello.rxlifecycle2:rxlifecycle-components:2.2.1'
+    compile project(':zxing_lib')
+    compile project(':websocketlib')
+    compile project(':versionlib')
+
+    compile 'com.alibaba:fastjson:1.2.33'
+
+    implementation project(':CordovaLib')
+
+    //kotlin依赖
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "org.jetbrains.anko:anko-common:$anko_version"
+    // 解决kotlin与databinding冲突
+//    kapt "com.android.databinding:compiler:$android_plugin_version"
+//    kapt "com.android.databinding:compiler:3.2.0-alpha16"
+    //    apply plugin: 'kotlin-kapt'
+    //    dataBinding {
+    //        enabled = true
+    //    }
+
+    api('com.github.bumptech.glide:glide:4.1.1') {
+        exclude group: 'com.android.support'
+    }
+
+    testCompile 'junit:junit:4.12'
+
+    // Required for instrumented tests
+    androidTestCompile 'com.android.support:support-annotations:24.0.0'
+    androidTestCompile 'com.android.support.test:runner:0.5'
+    // Core library
+    androidTestImplementation 'com.google.truth:truth:0.42'
+
+    testCompile "com.google.truth:truth:0.42"
+
+
+}
+repositories {
+    mavenCentral()
+    google()
+
+}

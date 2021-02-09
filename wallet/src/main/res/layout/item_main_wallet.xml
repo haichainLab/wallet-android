@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rly_content"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <ImageView
+            android:id="@+id/iv_token_icon"
+            android:layout_marginRight="25dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/tv_token_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_token_icon"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_token_icon"
+            android:textSize="16sp"
+            android:text=""
+            android:textColor="@color/C3"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_token_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_token_icon"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_token_icon"
+            android:textSize="12sp"
+            android:text="1SPO=¥2"
+            android:textColor="@color/C4"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tv_token_count"
+            android:layout_alignTop="@+id/iv_token_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="0"
+            android:textSize="16sp"
+            android:textColor="@color/C3" />
+        <TextView
+            android:id="@+id/tv_token_total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@+id/iv_token_icon"
+            android:textSize="12sp"
+            android:text="hours"
+            android:textColor="@color/C4" />
+    </RelativeLayout>
+
+    <View
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/C8"/>
+</LinearLayout>

@@ -1,0 +1,226 @@
+<resources>
+    <!--<string name="app_name">Galt</string>-->
+    <string name="login">登录</string>
+    <string name="pin_title">设置PIN安全码</string>
+    <string name="pin_verify_title">确认PIN安全码</string>
+    <string name="pin_Input_title">校验PIN安全码</string>
+    <string name="pin_tips">
+        这是你第一次使用我们的手机钱包,\n 所以你需要创建一个新的钱包,\n 或者从助记词中开始导入。
+    </string>
+    <string name="pin_create_wallet_name">钱包名称</string>
+    <string name="pin_create_wallet_avatar">钱包图标</string>
+    <string name="choose_coin_type">选择币种</string>
+
+    <string name="pin_create_wallet_seed">助记词</string>
+    <string name="pin_create_wallet_seed_verify">确认助记词</string>
+    <string name="pin_create_wallet_generate_seed">自动生成</string>
+    <string name="pin_explain">设定PIN码用以打开钱包,请不要忘记密码,否则会无法打开钱包。</string>
+    <string name="pin_verify_explain">再次输入你的PIN安全码</string>
+    <string name="pin_input_explain">请输入你的PIN安全码</string>
+    <string name="disclaimer">免责声明</string>
+    <string name="continues">继续</string>
+    <string name="send_sky">发送 SKY</string>
+
+    <string name="common_next">下一步</string>
+    <string name="start_import_wallet">开始导入</string>
+    <string name="toast_pin_error">两次输入的PIN安全码不一致</string>
+    <string name="input_pin_error">PIN输入错误，请重试</string>
+    <string name="creates">创建</string>
+    <string name="imports">导入</string>
+    <string name="reset_pin">重设</string>
+    <string name="me">我的</string>
+    <string name="found">Exchange</string>
+    <string name="vote">Haichain分红投票</string>
+    <string name="input_id">请输入钱包ID</string>
+    <string name="input_amount">请输入交易金额</string>
+    <string name="input_address">请输入钱包地址</string>
+    <string name="insufficient_balance">钱包余额不足</string>
+    <string name="scan_error">地址类型错误，请重新扫描</string>
+    <string name="generate_seed">重新生成</string>
+    <string name="creating_new_address">正在创建地址...</string>
+
+    <string name="order_inputs">发送方:</string>
+<string name="order_outpus">接收方:</string>
+
+    <string name="wallet_creat_title">创建钱包</string>
+    <string name="wallet_create_tips">
+        欢迎使用GALT钱包,如果您是第一次使用,请先创建一个钱包,如果您已有钱包请导入您之前的钱包助记词（助记词）。
+    </string>
+    <string name="disclaimer_info">
+        点击继续,表明您了解加密货币和区块链软件的相关风险,了解Skycoin以及Skycoin加密货币以及了解产品的原型和使用条例。
+    </string>
+    <string name="error_agreement">保护你的钱包!</string>
+    <string name="hint_agree">是的,我理解</string>
+    <string name="wallets">钱包</string>
+    <string name="wallet">钱包</string>
+    <string name="sky_hours">SKY 币时</string>
+    <string name="balance">余额</string>
+    <string name="new_wallet">创建钱包</string>
+    <string name="load_wallet">导入钱包</string>
+    <string name="Address">地址</string>
+    <string name="new_address">创建地址</string>
+    <string name="transaction">交易明细</string>
+    <string name="pls_input_wallet_name">请输入钱包名称</string>
+    <string name="pls_input_seed">请输入助记词</string>
+    <string name="notice">警告</string>
+
+    <string name="pls_input_pwd">请输入密码</string>
+    <string name="input_pwd">输入密码</string>
+    <string name="pwd_not_equal">两次密码不一致</string>
+
+    <string name="pls_confirm_pwd">请确认密码</string>
+    <string name="wallet_name_existed">钱包名称已使用，请换一个</string>
+    <string name="wallet_is_existed">钱包已经创建</string>
+    <string name="str_copy_success">复制成功</string>
+    <string name="send_from">发送</string>
+    <string name="send_to">接收</string>
+    <string name="amount">金额</string>
+    <string name="nodes">节点</string>
+    <string name="notes">备注</string>
+    <string name="cancle">取消</string>
+    <string name="network_unavailable_hint">网络不可用,请检查网络设置</string>
+    <string name="set_network">去设置</string>
+    <string name="input_pinnum_error">PIN输入错误次数过多,请5分钟后重试</string>
+    <string name="input_pinnum_one">PIN输入错误,还剩1次机会</string>
+    <string name="input_pinnum_two">PIN输入错误,还剩2次机会</string>
+    <string name="input_pintime">请</string>
+    <string name="input_pinminut">分钟后重试.</string>
+    <string name="pls_generate_seed">请生成助记词</string>
+    <string name="pls_confirm_seed">请确认你的助记词</string>
+    <string name="copy_seed">复制助记词</string>
+    <string name="paste_seed">粘贴助记词</string>
+
+    <string name="pin_error">密码输入错误,请重新输入</string>
+    <string name="backup_wallet">备份钱包</string>
+    <string name="backup_wallet_tips">长按复制,请务必牢记以下内容,丢失它则意味着丢失了钱包。</string>
+    <string name="str_send_success">发送成功</string>
+    <string name="str_send_error">发送失败</string>
+    <string name="send">发送</string>
+    <string name="str_create_address_failed">地址创建失败</string>
+    <string name="menu_refresh_wallet">刷新钱包</string>
+    <string name="menu_create_address">新建地址</string>
+    <string name="menu_transaction_info">交易明细</string>
+    <string name="menu_backup_wallet">备份钱包</string>
+    <string name="menu_send_coin">发送交易</string>
+    <string name="menu_version_up">版本更新</string>
+    <string name="loading_str">\n正在努力加载中...\n</string>
+    <string name="str_show_qrcode">扫描二维码</string>
+    <string name="delete_wallet">删除钱包</string>
+    <string name="delete_wallet_tips">删除钱包之前请记得转移你的数字资产,否则你将无法挽回你的损失,确定继续删除吗?</string>
+    <string name="delete_confirm">确定删除</string>
+    <string name="delete_wallet_error_msg">删除钱包失败</string>
+    <string name="manager_wallet">管理钱包</string>
+    <string name="transrecord">交易记录</string>
+    <string name="alart">消息通知</string>
+    <string name="system_settings">系统设置</string>
+    <string name="help_center">帮助中心</string>
+    <string name="about_us">关于我们</string>
+    <string name="alright_reserved">Haichain 2018 版权所有</string>
+    <string name="retype_pwd">再次输入密码</string>
+
+    <!--all-->
+    <string name="write_down_mnemonic">请抄写下您的助记词</string>
+    <string name="wallet_two">钱包</string>
+    <string name="import_existed_wallet">导入钱包</string>
+    <string name="password_reminder">密码提示 (可不填)</string>
+    <string name="ettes_and_digits">6-12 字母加数字</string>
+    <string name="backup_mnemonic">备份助记词</string>
+    <string name="wallet_s_name">钱包名称</string>
+    <string name="re_type_password">确认密码</string>
+    <string name="password">密码</string>
+    <string name="Write_down_your_wallet_mnemonic">记下你的助记词</string>
+    <string name="make_sure_remember">验证助记词</string>
+    <string name="retype_mnenonic">在下方输入框中输入您刚才抄写的助记词</string>
+
+    <string name="confirm">确认</string>
+    <string name="add_assets">添加新资产</string>
+    <string name="roll_out">转出</string>
+    <string name="into">转入</string>
+    <string name="trans_records">交易记录</string>
+    <string name="order_information">交易类型:</string>
+    <string name="turn_the_party">转出地址:</string>
+    <string name="remark">备注</string>
+    <string name="transaction_number">交易数额:</string>
+    <string name="transaction_time">交易时间:</string>
+    <string name="copy_the_url">复制地址</string>
+    <string name="share">分享</string>
+    <string name="save_to_album">保存到相册</string>
+    <string name="save_to_album_succ">保存到相册成功</string>
+    <string name="save_to_album_fail">保存到相册失败</string>
+    <string name="import_the_wallet">导入钱包</string>
+    <string name="management_of_the_purse">管理钱包</string>
+    <string name="plase_loading">正在加载中,请稍候...</string>
+    <string name="save">保存</string>
+    <string name="wallet_creat">创建钱包</string>
+    <string name="back_up_mnemonic">备份助记词</string>
+    <string name="delete_the_wallet">删除钱包</string>
+    <string name="change_the_psaaword">修改密码</string>
+    <string name="forget_your_password">忘记密码?</string>
+    <string name="the_import_mnemonic_can_reset_the_password">导入助记符可以重置密码。
+    </string>
+    <string name="immediately_the_import">立即导入</string>
+    <string name="the_old_password">旧的密码</string>
+    <string name="read">已读</string>
+    <string name="payment_notice">付款通知</string>
+    <string name="alerts">通知</string>
+    <string name="multilingual">选择语言</string>
+    <string name="monetary_unit">计价单位</string>
+    <string name="stytem_settings">系统设置</string>
+    <string name="check_the_update">检查更新</string>
+    <string name="privacy_policy">隐私政策</string>
+    <string name="use_protools">使用协议</string>
+    <string name="easy_to_use">安全稳定、转账免费、多币种钱包</string>
+    <string name="management_tool"></string>
+    <string name="the_transferee">转入地址:</string>
+    <string name="recent_transaction_record">最近的交易记录</string>
+    <string name="transferred_to">转账到</string>
+    <string name="enter_or_press_the_paste_adress">输入或按下粘贴地址</string>
+    <string name="the_other_address">转出地址</string>
+    <string name="please_input_the_amount_transferred">请输入转出数目</string>
+    <string name="tansfer_amount">请输入转出数目</string>
+    <string name="note">备注</string>
+    <string name="note_optional">备注(可选)</string>
+    <string name="payment_details">付款明细</string>
+    <string name="the_wallet_password">钱包密码</string>
+    <string name="in_transfer">发送交易...</string>
+    <string name="in_vote">发送投票结果...</string>
+    <string name="transfer_success">交易\成功</string>
+    <string name="vote_success">投票\成功</string>
+    <string name="chinese">中文</string>
+    <string name="english">英语</string>
+    <string name="hint_lanuage">需要重启应用使语言生效</string>
+    <string name="total_asset">总资产</string>
+    <string name="switch_the_purse">切换钱包</string>
+    <string name="wallet_pwd">钱包密码</string>
+    <string name="pwd_set_hint">请为您的钱包创建一个密码,该密码用于交易及删除钱包等敏感操作。</string>
+    <string name="input_pwd_hint">请输入密码提示</string>
+    <string name="password_again">请再次输入密码</string>
+    <string name="place_pwd">请输入密码</string>
+    <string name="pwd_remark">我们不会记录您的密码,密码遗失后无法找回,为防止遗忘，您可以设置一个简单的密码提示。</string>
+    <string name="to_share">分享</string>
+    <string name="password_set_successful">密码设置成功!</string>
+    <string name="import_">导入</string>
+    <string name="please_select_wallet_icon">请选择一个图像作为钱包的图标</string>
+    <string name="got_it">知道了</string>
+    <string name="add">添加</string>
+    <string name="wallet_set_successful">钱包创建成功！</string>
+    <string name="wallet_save_successful">保存成功！</string>
+    <string name="ban_screen_hint">请勿截图和拍照</string>
+    <string name="ban_screen_hint1">如果有人获取了你的助记词将直接获取你的资产！</string>
+    <string name="ban_screen_hint2">钱包</string>
+    <string name="load_import">导入中，请稍后...</string>
+    <string name="import_success">导入钱包成功！</string>
+    <string name="del_success">删除成功！</string>
+    <string name="save_success">保存成功！</string>
+    <string name="pwd_hint">密码提示:</string>
+    <string name="back_up_wallet">备份完成!</string>
+    <string name="wallet_pwd_hint_bottom">提示：如忘记密码，请卸载并重新安装软件。</string>
+    <string name="del_hint">请慎重,删除操作无法恢复</string>
+    <string name="write_down_mnemonic_hint">助记词用于恢复钱包，请将它准确的抄写在纸上，并存放在只有你知道的安全的地方，如果遗失助记词你的钱包将无法恢复。为了钱包的安全请不要将助记词存储在网络上。</string>
+    <string name="into_price">转入数目</string>
+    <string name="updatecontent"></string>
+    <string name="custom_content_text">自定义通知栏进度:%d%%/100%%</string>
+    <string name="update_title">震撼来袭</string>
+
+
+</resources>

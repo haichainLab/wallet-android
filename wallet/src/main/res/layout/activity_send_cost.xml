@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/common_edit_radio_bg"
+    tools:context="io.samos.wallet.activities.SendCostActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_centerInParent="true"
+            android:text="@string/send_sky"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/close"
+            android:src="@drawable/close"
+            android:paddingRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/linen"/>
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <LinearLayout
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/send_from"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/from_wallet"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text=""
+                android:singleLine="true"
+                android:padding="5dp"
+                android:background="@drawable/edit_boarder" />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/send_to"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <io.samos.wallet.widget.SamosEditText
+                    android:id="@+id/to_wallet"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:text=""
+                    android:singleLine="true"
+                    android:padding="5dp"
+                    android:background="@drawable/edit_boarder" />
+                <ImageView
+                    android:id="@+id/img_qrcode"
+                    android:paddingLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/smalll_qr_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/amount"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <io.samos.wallet.widget.SamosEditText
+                android:id="@+id/amount"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text=""
+                android:inputType="numberDecimal"
+                android:padding="5dp"
+                android:background="@drawable/edit_boarder" />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/notes"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <io.samos.wallet.widget.SamosEditText
+                android:id="@+id/nodes"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:minHeight="60dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:padding="5dp"
+                android:gravity="top"
+                android:background="@drawable/edit_boarder" />
+
+
+        </LinearLayout>
+    </ScrollView>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true">
+            <TextView
+                android:id="@+id/cancle"
+                android:gravity="center"
+                android:text="@string/cancle"
+                android:textColor="@android:color/black"
+                android:layout_width="130dp"
+                android:background="@drawable/sendcost_botton"
+                android:layout_height="45dp" />
+            <TextView
+                android:id="@+id/send"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:textColor="@android:color/black"
+                android:text="@string/send"
+                android:layout_width="130dp"
+                android:background="@drawable/sendcost_botton"
+                android:layout_height="45dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

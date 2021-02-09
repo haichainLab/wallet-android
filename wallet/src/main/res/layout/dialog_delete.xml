@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="25dp"
+              android:text="@string/notice"
+              android:textSize="18sp"
+              android:textColor="@color/black"
+    />
+    <TextView android:id="@+id/tv_text"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="40dp"
+              android:layout_marginLeft="10dp"
+              android:layout_marginTop="20dp"
+              android:textSize="16sp"
+              android:textColor="@color/C3"
+              android:text="@string/del_hint"
+    />
+    <include layout="@layout/layout_default_line"/>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+        <TextView android:id="@+id/tv_cancel"
+                  android:layout_width="0dp"
+                  android:layout_height="60dp"
+                  android:layout_weight="1"
+                  android:gravity="center"
+                  android:text="@string/cancle"
+                  android:textColor="@color/dodgerblue"
+                  android:textSize="16sp"/>
+        <View android:layout_width="1dp"
+              android:layout_height="match_parent"
+              android:background="@android:color/darker_gray"
+        />
+        <TextView android:id="@+id/tv_confirm"
+                  android:layout_width="0dp"
+                  android:layout_height="60dp"
+                  android:layout_weight="1"
+                  android:gravity="center"
+                  android:text="@string/confirm"
+                  android:textColor="@color/dodgerblue"
+                  android:textSize="16sp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

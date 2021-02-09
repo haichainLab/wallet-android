@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="200dp"
+             android:layout_height="wrap_content"
+             android:gravity="center_horizontal"
+             android:background="@null"
+             android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/common_dialog_radio_bg"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="35dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/C3"
+            android:text="@string/ban_screen_hint"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="@string/ban_screen_hint1"/>
+        <include layout="@layout/layout_default_line"/>
+
+        <TextView
+            android:id="@+id/tv_got"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="@string/got_it"
+            android:textColor="@color/C3"
+            android:textSize="18sp"/>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/fc_bancamera"/>
+</FrameLayout>

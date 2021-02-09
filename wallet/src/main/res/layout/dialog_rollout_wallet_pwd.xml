@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/C1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingTop="18sp">
+
+        <ImageView
+            android:id="@+id/iv_wallet_pwd_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/the_wallet_password"
+            android:textColor="@color/C3"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/C3"
+        android:layout_marginLeft="30dp"
+        android:text="@string/password"/>
+    <io.samos.wallet.widget.SamosEditText
+        android:id="@+id/et_wallet_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/_6_12letters_and_digits"
+        android:textSize="12sp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
+    <TextView
+        android:textSize="10sp"
+        android:textColor="#6d6f71"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/forget_your_password"/>
+    <TextView
+        android:textSize="10sp"
+        android:textColor="#6d6f71"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/the_import_mnemonic_can_reset_the_password"/>
+    <Button
+        android:id="@+id/btn_wallet_pwd_ok"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/drawable_button_bg"
+        android:layout_width="match_parent"
+        android:text="@string/confirm"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/C3"
+        android:layout_height="40dp" />
+</LinearLayout>
